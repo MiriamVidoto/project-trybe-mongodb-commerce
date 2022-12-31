@@ -5,5 +5,5 @@ db.produtos.find(
       $gt: 50,
     },
   },
-  { nome: true, vendidos: true, _id: false }
+  { nome: true, vendidos: true, _id: false },
 );
