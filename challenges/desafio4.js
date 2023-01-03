@@ -3,4 +3,4 @@ db.produtos
     { vendidos: { $lt: 100, $gt: 50 } },
     { nome: true, vendidos: true, _id: false },
   )
-  .sort({vendidos: 1});
+  .sort({ vendidos: 1 });
