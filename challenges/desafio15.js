@@ -6,7 +6,7 @@ db.produtos.updateMany({},
 
 db.produtos.updateMany(
   {
-    tags: { $elemMatch: { $eq: "bovino" } }
+    tags: { $elemMatch: { $eq: "bovino" } },
   },
   { 
     $set: { avaliacao: 5 },
@@ -15,7 +15,7 @@ db.produtos.updateMany(
 
 db.produtos.updateMany(
   {
-    tags: { $elemMatch: { $eq: "ave" }}
+    tags: { $elemMatch: { $eq: "ave" } },
   },
   { 
     $set: { avaliacao: 3 },
