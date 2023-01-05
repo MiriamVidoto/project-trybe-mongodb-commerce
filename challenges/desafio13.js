@@ -5,7 +5,6 @@ db.produtos.updateMany({},
     },
   },
 );
-
 db.produtos.find({},
   { nome: true, criadoPor: true, _id: false },
 );
