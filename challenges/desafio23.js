@@ -1,4 +1,5 @@
-db.produtos.updateMany({},
+db.produtos.updateMany(
+  {},
   {
     $push: {
       tags: {
@@ -9,6 +10,4 @@ db.produtos.updateMany({},
   },
 );
 
-db.produtos.find({},
-  { nome: true, tags: true, _id: false },
-);
+db.produtos.find({}, { nome: true, tags: true, _id: false });
