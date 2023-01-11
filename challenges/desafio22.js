@@ -1,8 +1,7 @@
 db.produtos.updateMany({},
   { 
     $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] },
-  },
-);
+  });
 
 db.produtos.updateOne(
   { nome: "Big Mac" },
@@ -15,5 +14,4 @@ db.produtos.updateMany(
 );
 
 db.produtos.find({},
-  { nome: true, vendasPorDia: true, _id: false },
-);
+  { nome: true, vendasPorDia: true, _id: false });
